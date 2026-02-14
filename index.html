@@ -1,15 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Hola</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <title>Alejandro Torres | Desarrollador Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Este es el encabezado</h1>
-    <p>hola jeje</p>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600">Alejandro Torres</h1>
+      <div class="space-x-6 hidden md:flex">
+        <a href="#about" class="hover:text-blue-600">Sobre mí</a>
+        <a href="#services" class="hover:text-blue-600">Servicios</a>
+        <a href="#portfolio" class="hover:text-blue-600">Portafolio</a>
+        <a href="#contact" class="hover:text-blue-600">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center justify-center text-center px-6">
+    <div>
+      <h2 class="text-5xl font-bold mb-6">
+        Desarrollo sitios web modernos y funcionales
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Ayudo a negocios y emprendedores a tener presencia profesional en internet.
+      </p>
+      <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+        Contáctame
+      </a>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">Sobre mí</h3>
+      <p class="text-gray-600 leading-relaxed">
+        Soy desarrollador web con experiencia en frontend y backend. 
+        Me especializo en crear páginas rápidas, responsivas y optimizadas. 
+        Trabajo con HTML, CSS, JavaScript y tecnologías modernas para 
+        ofrecer soluciones personalizadas.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="services" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-12">Servicios</h3>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-4">Páginas Web</h4>
+          <p class="text-gray-600">
+            Sitios corporativos y personales totalmente responsivos.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-4">Tiendas Online</h4>
+          <p class="text-gray-600">
+            E-commerce con carrito de compras y pagos integrados.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-4">Aplicaciones Web</h4>
+          <p class="text-gray-600">
+            Sistemas personalizados para tu negocio.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section id="portfolio" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-12">Portafolio</h3>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <h4 class="font-semibold text-lg">TechZone</h4>
+          <p class="text-gray-600 mt-2">Tienda online moderna.</p>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <h4 class="font-semibold text-lg">EcoVida</h4>
+          <p class="text-gray-600 mt-2">Página corporativa ecológica.</p>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <h4 class="font-semibold text-lg">FitGym</h4>
+          <p class="text-gray-600 mt-2">Sistema de reservas online.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">Contacto</h3>
+      <p class="text-gray-600 mb-4">Email: alejandro.torres.dev@gmail.com</p>
+      <p class="text-gray-600 mb-4">Teléfono: +52 55 1234 5678</p>
+      <p class="text-gray-600">Ciudad de México</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white py-6 text-center text-gray-500">
+    © 2026 Alejandro Torres - Todos los derechos reservados
+  </footer>
+
 </body>
 </html>
